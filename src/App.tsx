@@ -22,7 +22,7 @@ function App() {
 
       <main>
         <div className="text-slide">
-            <h1>A calculadora que você precisa para o seu negócio!</h1>
+            <h1>A CALCULADORA que você precisa para o seu negócio!</h1>
         </div>
         <div className="img-slide">
         </div>
