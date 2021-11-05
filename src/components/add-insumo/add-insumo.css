@@ -1,0 +1,27 @@
+.container-hover-custo-unitario {
+    width: 200px;
+    position: absolute;
+    top: -250px;
+    right: 0;
+    border-radius: 20px;
+    border: 1px solid #2C0548;
+    height: 250px;
+    background-color: white;
+    padding: 10px 5%;
+}
+
+.custo-unitario {
+    cursor: pointer;
+}
+
+.container-calc-img {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    background-image: url(../../img/calculator.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+

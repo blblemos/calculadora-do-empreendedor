@@ -12,3 +12,7 @@ body, input, button, textarea {
     font-family: 'Archivo Narrow', sans-serif;
     font: 600 18px 'Archivo Narrow', sans-serif ;
 }
+
+.clear {
+    clear: both;
+}

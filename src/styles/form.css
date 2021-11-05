@@ -1,0 +1,180 @@
+.container-form {
+    width: 94%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.row-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative; 
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    position: relative;
+}
+
+.container-input-w76 {
+    width: 76%;
+}
+
+.container-input-w30 {
+    width: 30%;
+}
+
+.container-input-w21 {
+    width: 21.33%;
+}
+
+.container-input span {
+    color: #2C0548;
+    font-size: 18px;
+    font-weight:600;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #2C0548;
+    font-size: 18px;
+    font-weight:400;
+    padding: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-control {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #2C0548;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.input-control-mini {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #2C0548;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.close-mini {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../img/close.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    right: -22px;
+    top: -5px;
+    color:#2C0548;
+    cursor: pointer;
+}
+
+.txt-title-mini-input {
+    font-size:14px;
+    color: #2C0548;
+}
+
+.txt-desc-mini-input {
+    font-size: 12px;
+    color: #2C0548;
+    margin: 10px 0 ;
+}
+
+.span-mini {
+    font-size: 12px !important;
+}
+
+.input-disabled {
+    background-color: #2C0548;
+    color: white;
+    text-align: center;
+}
+
+.container-img-delete {
+    position: relative;
+    top: 35px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/delete.png);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container-img-delete-inv {
+    position: relative;
+    top: 35px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.container-calc-insumo {
+    width: 44%;
+    min-width: 400px;
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.container-result-insumo {
+    width: calc(100% - 40px);
+    height: 50px;
+    min-width: 300px;
+    background-color: #2C0548;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight:600;
+    position: relative;
+}
+
+.container-result-insumo p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container-result-insumo p:nth-of-type(1){
+    margin-left: 30px;
+    float: left;
+}
+
+.container-result-insumo p:nth-of-type(2){
+    float: right;
+    margin-right: 30px;
+}
+
+.container-calc-insumo img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
