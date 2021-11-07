@@ -150,7 +150,12 @@ function AddInsumo ({ onChangeTotal}: Props) {
                             className="row-form"
                             >
                             <div className="container-input container-input-w30">
-                                <span>
+                                <div className="container-help">
+                                    <div className="hover-info">
+                                        <p>Os insumos de produção são os conjuntos de todos os materiais necessários para fabricar um produto. </p>
+                                    </div>
+                                </div>
+                                <span className="span-help">
                                     Insumo
                                 </span>
                                 <input 
@@ -161,7 +166,12 @@ function AddInsumo ({ onChangeTotal}: Props) {
                                 />
                             </div>
                             <div className="container-input container-input-w21" >
-                                <span>
+                                <div className="container-help">
+                                    <div className="hover-info">
+                                        <p>É a quantidade de insumo utilizada, utilize a unidade que preferir, porém lembre-se de utilizar a mesma unidade ao calcular o custo unitário. </p>
+                                    </div>
+                                </div>
+                                <span className="span-help">
                                     Quantidade Utilizada
                                 </span>
                                 <input 

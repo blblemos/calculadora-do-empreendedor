@@ -88,7 +88,12 @@ function AddDespesas ({ onChangeTotal}: Props) {
                             className="row-form"
                         >
                             <div className="container-input container-input-w76">
-                                <span>
+                                <div className="container-help">
+                                    <div className="hover-info">
+                                        <p>Também chamados “custos indiretos de fabricação” ou “gastos gerais de fabricação”, compreendem aqueles incorridos no processo de fabricação, mas não identificados diretamente a cada unidade produzida. Como exemplos: mão-de-obra indireta, energia, depreciação e manutenção dos edifícios, instalações, máquinas e equipamentos, do custo da direção e administração da fábrica e outros vinculados ao processo produtivo.</p>
+                                    </div>
+                                </div>
+                                <span className="span-help">
                                     Despesa
                                 </span>
                                 <input 
@@ -104,10 +109,13 @@ function AddDespesas ({ onChangeTotal}: Props) {
                                 </span>
                                 <input 
                                     type="text"
-                                    className="input-control"
+                                    className="input-control input-init-35"
                                     placeholder='20,00' 
                                     onChange={e => changeCusto(despesa.id, parseFloat(e.target.value.replace(",", ".")))}
                                 />
+                                <div className="input-txt-ini">
+                                    <p>R$</p>
+                                </div>
                             </div>
                             <div 
                                  className='container-img-delete'

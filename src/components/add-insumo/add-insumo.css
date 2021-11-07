@@ -8,6 +8,7 @@
     height: 250px;
     background-color: white;
     padding: 10px 5%;
+    z-index: 10;
 }
 
 .custo-unitario {
@@ -19,7 +20,7 @@
     height: 26px;
     position: absolute;
     right: 10px;
-    top: 38px;
+    top: 35px;
     background-image: url(../../img/calculator.png);
     background-size: 100% 100%;
     cursor: pointer;

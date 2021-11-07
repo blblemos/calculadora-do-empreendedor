@@ -1,6 +1,6 @@
 .container-form {
     width: 94%;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
     position: relative;
     padding-bottom: 40px;
 }
@@ -36,8 +36,16 @@ fieldset {
     width: 30%;
 }
 
+.container-input-w53 {
+    width: 53%;
+}
+
 .container-input-w21 {
     width: 21.33%;
+}
+
+.container-input-w33 {
+    width: calc(100% /3);
 }
 
 .container-input span {
@@ -45,7 +53,14 @@ fieldset {
     font-size: 18px;
     font-weight:600;
     margin-left: 15px;
-    white-space: nowrap;
+    line-height: 15px;
+    margin-bottom: 3px;
+    z-index: 1;
+}
+
+.span-help {
+    margin-left: 35px !important;
+    z-index: 1;
 }
 
 input {
@@ -68,6 +83,23 @@ input:focus {
     border: 1px solid #2C0548;
     box-sizing: border-box;
     border-radius: 20px;
+    margin-top: 5px;
+}
+
+.input-init-35 {
+    padding-left: 35px;
+}
+
+.input-txt-ini {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    top: 22.5px;
+    left: 10px;
+    line-height: 50px;
+    color: #2C0548;
+    font-size: 18px;
+    font-weight:400;
 }
 
 .input-control-mini {
@@ -90,6 +122,7 @@ input:focus {
     top: -5px;
     color:#2C0548;
     cursor: pointer;
+    z-index: 10;
 }
 
 .txt-title-mini-input {
@@ -177,4 +210,35 @@ input:focus {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+
+.container-help {
+    position: absolute;
+    top:0;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/help-web-button.png");
+    background-size: 100% 100%;
+    z-index: 10;
+    margin-bottom: 3px;
+}
+
+.container-help:hover .hover-info {
+    display: block;
+    
+}
+
+.hover-info {
+    width:200px;
+    padding:20px;
+    background-color: rgba(44, 5, 72,0.9);
+    color: white;
+    border-radius: 20px;
+    display: none;
+    transition: 1000ms;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
 }
