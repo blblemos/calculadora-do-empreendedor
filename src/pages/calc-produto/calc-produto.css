@@ -11,7 +11,13 @@
     font-weight: 400;
     font-size: 28px;
     color: #2C0548;
-    margin-left: 50%;
+    width: 100%;
     text-align: center;
-    transform: translateX(-50%);
+    
+}
+
+@media screen and (max-width: 510px) {
+    .container-div-calc h1 {
+        font-size: 20px;
+    }
 }

@@ -2,7 +2,7 @@ import { useState} from 'react';
 
 import {MaodeObra} from '../../types/MaodeObra';
 
-import imgadd from '../../img/Add-Materia-Prima.svg';
+import imgadd from '../../img/Add-Materia-Prima.png';
 
 type Props = {
     onChangeTotal: (total: number ) => void;
@@ -173,14 +173,23 @@ function AddMaodeObra ({onChangeTotal}: Props) {
                     );
                 })
             }
-            <div className="row-form">
-                <div className="container-calc-insumo">
-                    <div className="container-result-insumo">
+            <div className="row-form-total">
+                <div className="container-calc">
+                    <div className="container-result">
                         <p>Custo Total com Mão de Obra </p>
                         <p>{'R$ '+totalMaodeobra.toFixed(3).replace(".", ",")}</p>
                         <div className="clear"></div>
                     </div>
-                    <img src={imgadd} alt="ADD" onClick={addNewMaodeObra} />
+                   <div 
+                        className="container-result-img"
+                        onClick={addNewMaodeObra}
+                   >
+                    <img 
+                        src={imgadd} 
+                        alt="ADD" 
+                        onClick={addNewMaodeObra} 
+                    />
+                   </div>
                 </div>
                         
             </div>

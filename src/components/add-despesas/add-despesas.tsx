@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import {Despesas} from '../../types/Despesas';
 
-import imgadd from '../../img/Add-Materia-Prima.svg';
+import imgadd from '../../img/Add-Materia-Prima.png';
 
 
 type Props = {
@@ -127,18 +127,23 @@ function AddDespesas ({ onChangeTotal}: Props) {
                     );
                 })
             }
-            <div className="row-form">
-                    <div className="container-calc-insumo">
-                        <div className="container-result-insumo">
+            <div className="row-form-total">
+                    <div className="container-calc">
+                        <div className="container-result">
                             <p>Custo Total das Despesas </p>
                             <p>{'R$ '+somaDespesas.toFixed(3).replace(".",",")}</p>
                             <div className="clear"></div>
                         </div>
-                        <img 
-                            src={imgadd} 
-                            alt="ADD"
-                            onClick={addNewDespesa}  
-                        />
+                        <div
+                            className="container-result-img"
+                            onClick={addNewDespesa}
+                        >
+                            <img 
+                                src={imgadd} 
+                                alt="ADD"
+                                onClick={addNewDespesa}  
+                            />
+                        </div>
                     </div>
                             
                 </div>

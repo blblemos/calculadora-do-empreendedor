@@ -1,7 +1,6 @@
 main {
     width: 100%;
     height: 75vh;
-    padding: 10px;
     position: relative;
 }
 
@@ -9,6 +8,7 @@ main {
     width: 60%;
     height: calc(100% - 20px);
     position: absolute;
+    float: left;
 }
 
 .text-slide h1 {
@@ -23,11 +23,100 @@ main {
 }
 
 .img-slide {
-    width: 70%;
-    height: 100%;
-    margin-left: 30%;
-    background-image: url('../../img/home-img.svg');
+    width: 60%;
+    height: 90%;
+    float: right;
+    background-image: url('../../img/home-img.png');
     background-size: 100% 100%;
-    background-position-x: 150px;
+    
     background-repeat: no-repeat;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1300px){
+    .img-slide {
+        width: 65%;
+        height: 90%;
+    }
+
+    .text-slide h1 {
+        font-size: 50px;
+        padding: 0 150px 0 40px;
+    }
+
+}
+
+@media screen and (max-width: 1180px) {
+    .text-slide h1 {
+        font-size: 48px;
+        padding: 0 100px 0 20px;
+    }
+
+    .img-slide {
+        width: 65%;
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 870px){
+    .text-slide h1 {
+        font-size: 39px;
+    }
+    .img-slide {
+        width: 65%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .text-slide h1 {
+        font-size: 28px;
+        padding: 0 100px 0 20px;
+    }
+
+    .img-slide {
+        width: 65%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .text-slide h1 {
+        font-size: 20px;
+        padding: 0 60px 0 20px;
+    }
+
+    .img-slide {
+        width: 65%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .text-slide {
+        width: 100%;
+        height: 100%;
+        float: none;
+        text-align: center; 
+        top: 65%;
+        transform: translateY(-50%); 
+        z-index: 89;
+    }
+
+    .text-slide h1 {
+        font-size: 38px;
+        padding: 10px;
+    }
+
+    .img-slide {
+        width: 100%;
+        height: 50%;
+        float: none;
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+    }
 }

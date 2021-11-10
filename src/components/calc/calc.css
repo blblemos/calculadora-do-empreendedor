@@ -1,4 +1,4 @@
-.container-calc {
+.container-calc-title {
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -13,13 +13,14 @@
 }
 
 .container-title-calc span {
+    width: 100%;
+    text-align: center;
     color: #2C0548;
     font-size: 36px;
     font-style: regular;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateY(-50%);
 }
 
 .container-calc-pages {
@@ -51,4 +52,21 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+@media screen and (max-width: 740px){
+    .container-title-calc span {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .calc-pages {
+        width: 100%;
+    }
+
+    .calc-pages:last-of-type {
+        border-radius: 0 0 0 0;
+    }
+}
+
 

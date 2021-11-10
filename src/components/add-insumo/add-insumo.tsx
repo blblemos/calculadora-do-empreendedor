@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import {Insumo} from '../../types/Insumo';
 
-import imgadd from '../../img/Add-Materia-Prima.svg';
+import imgadd from '../../img/Add-Materia-Prima.png';
 
 import  '../add-insumo/add-insumo.css';
 
@@ -217,10 +217,12 @@ function AddInsumo ({ onChangeTotal}: Props) {
                                     </span>
                                     <input 
                                         type="text"
-                                        className="input-control-mini"
+                                        className="input-control-mini input-control-mini-valor"
                                         onChange={e => changeValorProduto(insumo.id, parseFloat(e.target.value.replace(",", ".")))}  
                                     />
-
+                                    <div className="input-txt-ini-mini">
+                                        <p>R$</p>
+                                    </div>
                                     <span className="span-mini">
                                        Quantidade
                                     </span>
@@ -253,14 +255,18 @@ function AddInsumo ({ onChangeTotal}: Props) {
                     );
                 })
             }
-                <div className="row-form">
-                    <div className="container-calc-insumo">
-                        <div className="container-result-insumo">
+                <div className="row-form-total">
+                    <div className="container-calc">
+                        <div className="container-result">
                             <p>Custo Total de Insumos </p>
                             <p>{'R$ '+totalInsumo.toFixed(3).replace(".", ",")}</p>
                             <div className="clear"></div>
                         </div>
-                        <img src={imgadd} alt="ADD" onClick={addNewInsumo} />
+                        <div 
+                            className="container-result-img"
+                            onClick={addNewInsumo}>
+                            <img src={imgadd} alt="ADD" onClick={addNewInsumo} />
+                        </div>
                     </div>
                             
                 </div>

@@ -21,6 +21,15 @@ fieldset {
     position: relative; 
 }
 
+.row-form-total {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative; 
+}
+
 .container-input {
     display: flex;
     flex-direction: column;
@@ -102,44 +111,6 @@ input:focus {
     font-weight:400;
 }
 
-.input-control-mini {
-    width: 90%;
-    height: 20px;
-    border: 1px solid #2C0548;
-    box-sizing: border-box;
-    border-radius: 20px;
-}
-
-.close-mini {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    background-image: url(../img/close.svg);
-    background-size: 100% 100%;
-    position: absolute;
-    right: -22px;
-    top: -5px;
-    color:#2C0548;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.txt-title-mini-input {
-    font-size:14px;
-    color: #2C0548;
-}
-
-.txt-desc-mini-input {
-    font-size: 12px;
-    color: #2C0548;
-    margin: 10px 0 ;
-}
-
-.span-mini {
-    font-size: 12px !important;
-}
-
 .input-disabled {
     background-color: #2C0548;
     color: white;
@@ -155,7 +126,7 @@ input:focus {
     background-image: url(../img/delete.png);
     background-size: 100% 100%;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .container-img-delete-inv {
@@ -168,7 +139,7 @@ input:focus {
     background-color: transparent;
 }
 
-.container-calc-insumo {
+.container-calc {
     width: 44%;
     min-width: 400px;
     position: absolute;
@@ -176,7 +147,7 @@ input:focus {
     display: flex;
 }
 
-.container-result-insumo {
+.container-result {
     width: calc(100% - 40px);
     height: 50px;
     min-width: 300px;
@@ -188,23 +159,23 @@ input:focus {
     position: relative;
 }
 
-.container-result-insumo p {
+.container-result p {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.container-result-insumo p:nth-of-type(1){
+.container-result p:nth-of-type(1){
     margin-left: 30px;
     float: left;
 }
 
-.container-result-insumo p:nth-of-type(2){
+.container-result p:nth-of-type(2){
     float: right;
     margin-right: 30px;
 }
 
-.container-calc-insumo img {
+.container-calc img {
     position: absolute;
     right: 0;
     top: 50%;
@@ -238,7 +209,99 @@ input:focus {
     display: none;
     transition: 1000ms;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 14px;
+    left: 0px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 1230px) {
+    .row-form {
+        flex-direction: column;
+        
+        border-radius: 20px;
+    }
+
+    .container-input-w76,
+    .container-input-w30,
+    .container-input-w53,
+    .container-input-w21,
+    .container-input-w33 {
+        width: 100%;
+        margin: 15px auto;
+    }
+    
+    .container-img-delete {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    .container-calc {
+        position: relative;
+        width: 100%;
+        height: auto;
+        right: auto;
+        margin: 0 auto;
+        min-width: 200px;
+        margin-top: 20px;
+    }
+
+    .container-result {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        min-width: 200px;
+        margin-top: 40px;
+    }
+
+    .container-result p {
+        width: 100%;
+        text-align: center;
+        top: 0;
+        transform: translateY(0);
+        
+    }
+
+    .container-result p:nth-of-type(1){
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    
+    .container-result p:nth-of-type(2){
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .container-result-img {
+        position: absolute;
+        right: 0;
+        top: -35px;
+        transform: translateY(0);
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        border: 2px solid #2C0548;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .container-result-img img {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .hover-info {
+        left: 0;
+    }
 }

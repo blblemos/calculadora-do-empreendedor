@@ -2,7 +2,7 @@ import '../../components/calc/calc.css';
 
 function Calc(){
     return (
-        <div className="container-calc">
+        <div className="container-calc-title">
             <div className="container-title-calc">
                 <span>Calculadora de Preço</span>
             </div>
@@ -10,9 +10,7 @@ function Calc(){
                 <div className="calc-pages">
                     <span>Produto</span>
                 </div>
-                <div className="calc-pages">
-                    <span>Serviço</span>
-                </div>
+                
             </div>
         </div>
     );
