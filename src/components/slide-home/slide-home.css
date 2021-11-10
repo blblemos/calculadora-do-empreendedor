@@ -1,6 +1,6 @@
 main {
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -98,10 +98,10 @@ main {
 @media screen and (max-width: 430px){
     .text-slide {
         width: 100%;
-        height: 100%;
+        height: 50%;
         float: none;
         text-align: center; 
-        top: 65%;
+        top: 69%;
         transform: translateY(-50%); 
         z-index: 89;
     }
