@@ -241,6 +241,9 @@ input:focus {
 }
 
 @media screen and (max-width: 570px) {
+    .container-form {
+        width: 100%;
+    }
     .container-calc {
         position: relative;
         width: 100%;
