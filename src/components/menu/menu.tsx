@@ -19,7 +19,7 @@ function Menu(){
                         </div>
                         <ul className='menu-desk'>
                             <li><Link to="">HOME</Link></li>
-                            <li><Link to="">SOBRE</Link></li>
+                            <li><Link to="/sobre">SOBRE</Link></li>
                             <li><Link to="/calc-produtos">CALCULADORA</Link></li>
                         
                         </ul>
@@ -43,7 +43,7 @@ function Menu(){
                 ></div>
                 <div className='menu-mobile-hover'>
                     <li><Link to="">HOME</Link></li>
-                    <li><Link to="">SOBRE</Link></li>
+                    <li><Link to="/sobre">SOBRE</Link></li>
                     <li><Link to="/calc-produtos">CALCULADORA</Link></li>
                 </div>
             </ul>   

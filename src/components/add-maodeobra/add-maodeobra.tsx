@@ -115,7 +115,9 @@ function AddMaodeObra ({onChangeTotal}: Props) {
                             <div className="container-input container-input-w30">
                                 <div className="container-help">
                                     <div className="hover-info">
-                                        <p></p>
+                                        <p>É o trabalho manual empregado na produção. Por que é importante incluir a mão de obra no produto? Pois "tempo é dinheiro", quando 
+                                            não é considerado, você pode estar recebendo menos do que deveria, uma vez que dedicou esforço e tempo. Muitas vezes apenas aplicando 
+                                            a margem o valor recebido é inferior ao "custo do seu tempo e esforço".</p>
                                     </div>
                                 </div>
                                 <span className="span-help">

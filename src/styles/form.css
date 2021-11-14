@@ -209,7 +209,7 @@ input:focus {
     display: none;
     transition: 1000ms;
     position: absolute;
-    top: 14px;
+    top: 11px;
     left: 0px;
     font-size: 12px;
 }

@@ -14,20 +14,22 @@ nav {
 }
 
 .container-menu-desk {
-    padding: 0 5%;
+    padding: 0 5%; 
 }
 
 .container-logo-img{
-    width: 200px;
+    width: 220px;
     height: 100px;
-    float: left;
+    float: left; 
 }
 
 .logo-img {
     width: 100%;
     height: 100%;
     background-image: url('../../img/logo.png');
-    background-size: 100% 100%;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 
@@ -49,7 +51,7 @@ nav {
 
 .menu-desk li a {
     text-decoration: none;
-    color: rgba(255, 255, 255,  0.85);
+    color: rgba(255, 255, 255,  1);
 }
 
 .menu-desk li a:hover{
@@ -142,5 +144,15 @@ nav {
     .container-menu {
         width: 100%;
         padding: 0 10px; 
+    }
+
+    .container-logo-img{
+        width: 190px;
+        height: 100px;
+    }
+
+    .logo-img {
+        background-size: 100% 60%;
+
     }
 }

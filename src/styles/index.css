@@ -5,7 +5,11 @@
 }
 
 body {
-    background-color: #2C0548;
+    max-width: 2500px;
+    margin: 0 auto;
+    background: rgb(80,16,125);
+    background: linear-gradient(324deg, rgba(80,16,125,1) 0%, rgba(80,16,125,1) 0%, rgba(44,5,72,1) 100%); 
+    background-repeat: no-repeat;
 }
 
 body, input, button, textarea {

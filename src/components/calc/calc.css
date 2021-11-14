@@ -3,6 +3,8 @@
     width: 100%;
     margin: 0 auto;
     background-color: #EBDFF4;
+    border-radius: 10px 10px 0 0;
+    
 }
 
 .container-title-calc {
@@ -10,6 +12,7 @@
     width: 100%;
     height: 100px;
     background-color: #FFFF;
+    border-radius: 10px 10px 0 0;
 }
 
 .container-title-calc span {
