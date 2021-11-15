@@ -95,3 +95,9 @@
     top: -42px;
 }
 
+@media screen and (max-width: 570px) {
+    .container-hover-custo-unitario {
+        right: 15px;
+    }
+}
+
