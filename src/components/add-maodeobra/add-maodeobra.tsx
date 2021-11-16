@@ -126,7 +126,7 @@ function AddMaodeObra ({onChangeTotal}: Props) {
                                 <input 
                                     type="text" 
                                     className="input-control"
-                                    placeholder='Salário'
+                                    placeholder='Custos com Mão de obra'
                                     onChange={e => changeNome(maodeobra.id ,e.target.value)}
                                 />
                             </div>
